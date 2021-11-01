@@ -1,2 +1,2 @@
 # minishell
-implementation of basic shell
+implementation of basic shell within Hive Helsinki standards
