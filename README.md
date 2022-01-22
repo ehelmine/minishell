@@ -6,4 +6,5 @@ Want to see how it works?
 
 run following command<br />
 git clone https://github.com/ehelmine/minishell.git ellahelminen_minishell ; cd ellahelminen_minishell ; make ; ./minishell
-<br />then use it like you would use a shell. Implementation doesn't include everything, for example pipes ( | )
+<br />then use it like you would use a shell. When you want to exit shell, just type exit and press enter.<br />
+Implementation doesn't include everything, for example pipes ( | )<br />
