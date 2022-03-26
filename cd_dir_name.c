@@ -6,7 +6,7 @@
 /*   By: ehelmine <ehelmine@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 15:40:11 by ehelmine          #+#    #+#             */
-/*   Updated: 2021/09/24 22:37:36 by ehelmine         ###   ########.fr       */
+/*   Updated: 2022/03/26 12:19:25 by ehelmine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,12 @@
 
 void	clean_quotes_from_dir_name(char *d)
 {
-	int		i;
 	size_t	len;
 	char	*tmp;
 
 	tmp = NULL;
 	if (d == NULL)
 		return ;
-	i = 0;
 	len = ft_strlen(d);
 	if ((d[0] == '"' && d[len - 1] == '"') || (d[0] == '\'' && d[len - 1]
 			== '\''))

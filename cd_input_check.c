@@ -6,7 +6,7 @@
 /*   By: ehelmine <ehelmine@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/30 16:59:34 by ehelmine          #+#    #+#             */
-/*   Updated: 2021/09/15 13:23:13 by ehelmine         ###   ########.fr       */
+/*   Updated: 2022/03/26 12:18:55 by ehelmine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,6 @@
 
 static int	check_cd_flag_end_of_input(char *args, t_shell *data)
 {
-	int	i;
-
-	i = 0;
 	data->i++;
 	while (args[data->i] != '\0' && ft_isspace(args[data->i]))
 		data->i++;
@@ -52,9 +49,6 @@ static int	check_cd_flags_loop(char *args, t_shell *data)
 
 static int	check_cd_flags(char *args, t_shell *data)
 {
-	int	len;
-
-	len = 0;
 	while (args[data->i] != '\0')
 	{
 		while (ft_isspace(args[data->i]) && args[data->i] != '\0')

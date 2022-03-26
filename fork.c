@@ -6,7 +6,7 @@
 /*   By: ehelmine <ehelmine@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/07 14:31:01 by ehelmine          #+#    #+#             */
-/*   Updated: 2021/09/30 14:16:32 by ehelmine         ###   ########.fr       */
+/*   Updated: 2022/03/26 12:19:11 by ehelmine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,12 +81,10 @@ static char	*skip_all_whitespaces_and_dup_new_str(char *str)
 	int		i;
 	int		space_len;
 	char	*new_str;
-	char	*tmp;
 
 	i = 0;
 	space_len = 0;
 	new_str = skip_whitespace_begin_and_end(str);
-	tmp = NULL;
 	while (new_str[i] != '\0')
 	{
 		space_len = 0;

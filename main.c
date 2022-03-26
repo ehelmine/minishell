@@ -6,7 +6,7 @@
 /*   By: ehelmine <ehelmine@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/28 14:14:45 by ehelmine          #+#    #+#             */
-/*   Updated: 2021/10/02 17:39:33 by ehelmine         ###   ########.fr       */
+/*   Updated: 2022/03/26 12:18:29 by ehelmine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,12 +56,10 @@ static void	get_environment_variables(t_shell *data)
 {
 	extern char	**environ;
 	int			num_of_vars;
-	char		**path_array;
 	int			i;
 
 	num_of_vars = 0;
 	i = 0;
-	path_array = NULL;
 	while (environ[num_of_vars] != NULL)
 		num_of_vars++;
 	data->environ = (char **)malloc(sizeof(char *) * (num_of_vars + 1));
